@@ -1,0 +1,26 @@
+.section{
+    background-repeat: no-repeat;
+}
+
+#ip-input:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+#ip-input{
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    height: 3.5rem;
+}
+
+.sub-btn{
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    height: 3.5rem;
+    width: 4rem;
+}
+
+.sub-btn img{
+    height: 12px;
+    width: 8px;
+}
