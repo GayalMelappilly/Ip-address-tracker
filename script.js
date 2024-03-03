@@ -9,7 +9,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 function getIp() {
     var ip = $('#ip-input').val()
-
     $.ajax({
         url: "https://geo.ipify.org/api/v1",
         data: { apiKey: apiKey, ipAddress: ip },
@@ -20,7 +19,7 @@ function getIp() {
             $('#timezone').text(data.location.timezone)
             $('#isp').text(data.isp)
             console.log(data.location.lat, data.location.lng)
-            var marker = L.marker([data.location.lat, data.location.lng])
+            marker = L.marker([data.location.lat, data.location.lng])
             marker.bindPopup(data.location.country + ', ' + data.location.region + ', ' + data.location.city).openPopup();
             marker.addTo(map)
             map.panTo(new L.LatLng(data.location.lat, data.location.lng));
