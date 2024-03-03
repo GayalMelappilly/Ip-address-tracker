@@ -18,6 +18,7 @@ function getIp() {
             $('#location').text(data.location.country + ', ' + data.location.region + ', ' + data.location.city)
             $('#timezone').text(data.location.timezone)
             $('#isp').text(data.isp)
+            $('#display').css('visibility', 'visible')
             console.log(data.location.lat, data.location.lng)
             marker = L.marker([data.location.lat, data.location.lng])
             marker.bindPopup(data.location.country + ', ' + data.location.region + ', ' + data.location.city).openPopup();

@@ -28,40 +28,42 @@
   <div class="section text-center p-4 text-light position-relative col-sm-12 col-md-12 col-lg-12">
     <h1>IP Address Tracker</h1>
 
-    <div class="input-div d-flex justify-content-center">
-      <input id="ip-input" class="mt-4 w-25 p-3 m-0 fluid" type="text" placeholder="Search for any IP address or domain">
+    <div class="input-div d-flex justify-content-center row">
+      <input id="ip-input" class="mt-4 w-25 p-3 m-0 input-sm form-control" type="text" placeholder="Search for any IP address or domain">
       <button class="bg-dark sub-btn mt-4" onclick="getIp()"><img src="./images/icon-arrow.svg" alt=""></button>
     </div>
 
-    <section class="display-out d-flex position-absolute p-5 text-secondary w-75 rubik-font rounded h-50 row flex-grow-1">
-      <div class="col-sm-6 col-lg-3">
+    <section class="display-out d-flex position-absolute p-5 text-secondary w-auto rubik-font rounded row mt-3" id="display" style="visibility: hidden;">
+
+      <div class="col-6 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 w-auto">
         <p class="h6">IP ADDRESS</p>
         <p id="ip">--</p>
       </div>
 
-      <div class="col-sm-6 col-lg-3">
+      <div class="col-6 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 w-auto">
         <p class="h6">LOCATION</p>
         <p id="location">--</p>
       </div>
 
-      <div class="col-sm-6 col-lg-3">
+      <div class="col-6 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 w-auto">
         <p class="h6">TIMEZONE</p>
         <p id="timezone">--</p>
       </div>
 
-      <div class="col-sm-6 col-lg-3">
+      <div class="col-6 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 w-auto">
         <p class="h6">ISP</p>
         <p id="isp">--</p>
       </div>
+
     </section>
 
   </div>
   <div id="map" class="position-relative img-fluid"></div>
-
-  <!-- <div class="attribution">
+  <div class="attribution text-center overflow-none bg-dark text-light rubik-font">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://github.com/GayalMelappilly">Gayal Melappilly</a>.
+  </div>
+
 
   <script src="script.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
